@@ -1,22 +1,32 @@
 import 'package:flutter/material.dart';
 
-void main () {
-  runApp(new HelloWorldScreen());
+void main (){
+  runApp(new ListaTarefasApp());
+
 }
 
-class HelloWorldScreen extends StatelessWidget {
+class ListaTarefasApp extends StatelessWidget {
+  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Hello World')
-        ),
-        body: Center(
-          child: Text('Hello, Flutter')
-          )
-      )
+    return new MaterialApp(
+      home: new ListaScreen()
     );
   }
 
 }
+
+class ListaScreen extends StatelessWidget {   @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+        appBar: new AppBar(
+          title: new Text("Lista de tarefas"),
+        ),
+        body: Column(),
+      );
+  }
+}
+
+
+
+
