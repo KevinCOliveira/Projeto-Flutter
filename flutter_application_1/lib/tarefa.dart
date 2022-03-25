@@ -1,15 +1,16 @@
-class Task {
-  //atributos
+// ignore_for_file: unnecessary_new, prefer_initializing_formals
+
+class Tarefa {
   String nome;
   DateTime data;
   bool concluida;
-
-  // construtor;
-  Task(String nome){
+  
+ Tarefa(String nome) {
     this.nome=nome;
-    data=DateTime.now();
-    concluida=false;
+    this.data=DateTime.now();
+    this.concluida=false;
   }
 }
 
-Task t= new Task ('Estudar Html5');
+
+// Task t= new Task ('Estudar Html5');
